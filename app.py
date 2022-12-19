@@ -20,6 +20,8 @@ def mostrarMapa():
     fig, ax = plt.subplots(figsize = (8,10))
     eleccion.plot(ax = ax, color = 'White', edgecolor = 'grey')
     selecion_geometria01.plot(ax = ax, color = 'Red')
+    plt.show()
+
 
 #main
 departamentos = gpd.read_file('peru_departamental_simple.geojson')
