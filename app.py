@@ -16,7 +16,7 @@ values = departamentos['ADM1_ES_MAYUS'].tolist()
 set_departamentos=set(values)
 lista_departamentos=list(set_departamentos)
 lista_departamentos.sort()
-st.markdown('**Centros de Vacunacion Covid por Departamento**')
+st.title('**Centros de Vacunacion Covid por Departamento**')
 departamento=st.selectbox('Selecciona el departamento:',lista_departamentos)
 
 centro_vacunacion_filter = centro_vacunacion_all[(centro_vacunacion_all.departamento == departamento)]
